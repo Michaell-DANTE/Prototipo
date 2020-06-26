@@ -1,6 +1,6 @@
 <?php
 
-    $contenido = ("../vista/plantilla.phtml");
+    
 
     if( isset($_REQUEST['procesar']) )
     {
@@ -10,9 +10,9 @@
 
         require("../modelo/registroUD.php");
             
-
-
+        header('Location: ../controlador/tipo_doc.php');
+        
     }
-
-    require('../vista/plantilla.phtml');
+    
+    
 ?>

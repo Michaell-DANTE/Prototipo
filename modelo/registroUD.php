@@ -2,9 +2,9 @@
 
     require_once("../modelo/conexion.php");
 
-    $sqlU = "INSERT INTO usuarios(id_usuarios, nombre_usuarios, documento)";
+    $sqlU = "INSERT INTO usuarios(nombre, documento, curso, jornada, id_tipo_doc, id_rol, id_estado)";
 
-    $sqlU .=" VALUES(1,'$bd_nombre', '$bd_documento');";
+    $sqlU .=" VALUES('$bd_nombre', '$bd_documento', '$bd_curso', '$bd_jornada', '$bd_tipo_doc', '$bd_rol', '$bd_estado');";
 
     $resultado = $con -> query("$sqlU");
 

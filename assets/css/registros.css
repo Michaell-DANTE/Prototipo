@@ -12,10 +12,10 @@ body
 .contenedor
 {
 
-    width: 540px;
+    width: 620px;
     height: 350px;
     background: white;
-    color: black;
+    color: white;
     top: 50%;
     left: 50%;
     position: absolute;
@@ -45,19 +45,8 @@ body
     
     }
 
-    .contenedor .ingreso
-    {
-    
-        width: 100px;
-        height: 100px;
-        position: absolute;
-        top: 55px;
-        left: calc(32% - 50px);
-    
-    }
 
 }
-
 
 .contenedor .ingreso
 {
@@ -66,38 +55,25 @@ body
     height: 100px;
     position: absolute;
     top: 55px;
-    left: calc(30% - 50px);
+    left: calc(26% - 50px);
 
 }
 
-
-
-.contenedor .registro
+.contenedor .salida
 {
 
     width: 100px;
     height: 100px;
     position: absolute;
     top: 55px;
-    left: calc(72.5% - 50px);
+    left: calc(71% - 50px);
 
 }
 
-.contenedor a
+.contenedor .salidaL
 {
-
-    padding: 0 0 100px;
-    text-align: center;
-    font-size: 20px;
-
-}
-
-
-.contenedor .ingresoL
-{
-
     position: absolute;
-    left: calc(20% - 50px);
+    left: calc(65% - 50px);
     top: 190px;
     text-decoration: none;
     color: white;
@@ -115,11 +91,11 @@ body
 
 }
 
-.contenedor .registroL
+.contenedor .ingresoL
 {
 
     position: absolute;
-    left: calc(67% - 50px);
+    left: calc(20% - 50px);
     top: 190px;
     text-decoration: none;
     color: white;

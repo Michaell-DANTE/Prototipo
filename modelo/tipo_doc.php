@@ -2,7 +2,7 @@
 
     require_once('../modelo/conexion.php');
 
-    $sql = "SELECT id_tipo_documentos, nombre_tipo_documentos FROM tipo_documentos;";
+    $sql = "SELECT id, tipo_documento FROM tipo_doc;";
 
 
     $query = mysqli_query($con, $sql);

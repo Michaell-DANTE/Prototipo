@@ -20,14 +20,16 @@
 
             <input name="documento" type="text" placeholder="Documento">
 
-            <select name="">
+            <select name="tipo_doc">
             
+                <option>Tipo de Documento</option>
+
                 <?php
                 while($datos = mysqli_fetch_array($query))
                 { 
                 ?>
 
-                <option value="<?php echo $datos['nombre_tipo_documentos'];?>"><?php echo $datos['nombre_tipo_documentos'];?></option>
+                <option value="<?php echo $datos['id'];?>"><?php echo $datos['tipo_documento'];?></option>
                 
                 <?php 
                 }
@@ -35,16 +37,33 @@
 
             </select>
 
-            <input name="estado" type="text" placeholder="Estado">
+            <select name="estado">
 
-            <select name="">
+                <option>Estado</option>
+            
+                <?php
+                while($datose = mysqli_fetch_array($querye))
+                { 
+                ?>
+
+                <option value="<?php echo $datose['id'];?>"><?php echo $datose['estados'];?></option>
+                
+                <?php 
+                }
+                ?>
+
+            </select>
+
+            <select name="rol">
+
+                <option>Rol</option>
             
                 <?php
                 while($datosr = mysqli_fetch_array($queryr))
                 { 
                 ?>
 
-                <option value="<?php echo $datosr['nombre_rol'];?>"><?php echo $datosr['nombre_rol'];?></option>
+                <option value="<?php echo $datosr['id'];?>"><?php echo $datosr['nombre_rol'];?></option>
                 
                 <?php 
                 }
