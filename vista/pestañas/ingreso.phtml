@@ -1,0 +1,65 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="../../assets/css/sub_ingreso.php"> -->
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="contenedor">
+
+
+        <form action="../controlador/general.php" method="post">
+
+ 
+            <input name="nombre" type="text" placeholder="Nombre">
+
+            <input name="documento" type="text" placeholder="Documento">
+
+            <select name="">
+            
+                <?php
+                while($datos = mysqli_fetch_array($query))
+                { 
+                ?>
+
+                <option value="<?php echo $datos['nombre_tipo_documentos'];?>"><?php echo $datos['nombre_tipo_documentos'];?></option>
+                
+                <?php 
+                }
+                ?>
+
+            </select>
+
+            <input name="estado" type="text" placeholder="Estado">
+
+            <select name="">
+            
+                <?php
+                while($datosr = mysqli_fetch_array($queryr))
+                { 
+                ?>
+
+                <option value="<?php echo $datosr['nombre_rol'];?>"><?php echo $datosr['nombre_rol'];?></option>
+                
+                <?php 
+                }
+                ?>
+
+            </select>
+
+            <input name="curso" type="text" placeholder="Curso">
+
+            <input name="jornada" type="text" placeholder="Jornada"> 
+
+            <input name="procesar" class="BotonIngreso" type="submit" value="Registrar">
+
+        </form>
+
+    </div>
+</body>
+</html>
