@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="contenedor2">
+        <table>
+
+            <tr>
+            
+                <th>Nombre</th>
+                <th>Documento</th>
+                <th>Fecha : Hora</th>
+
+            </tr>
+
+            <?php
+                while($datosb = mysqli_fetch_array($queryb))
+                { 
+            ?>
+
+            <tr>
+            
+            <td><?php echo $datosb['nombre_usuario']; ?></td>
+            <td><?php echo $datosb['documento']; ?></td>
+            <td><?php echo $datosb['fecha']; ?></td>
+
+            </tr>
+
+            <?php
+                }
+            ?>
+
+        </table>
+    </div>
+
+</body>
+</html>
