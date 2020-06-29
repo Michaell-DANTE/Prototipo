@@ -2,12 +2,8 @@
 
     require_once('../modelo/conexion.php');
 
-    $sqlb = "SELECT nombre_usuario, documento, fecha, act_estado FROM bitacora_usuario;";
+    require_once('../config.php');
 
-
-    $queryb = mysqli_query($con, $sqlb);
-
-
-
+    $queryb = registro_entrada($con);
 
 ?>

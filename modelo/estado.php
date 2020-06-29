@@ -2,11 +2,8 @@
 
     require_once('../modelo/conexion.php');
 
-    $sqle = "SELECT id, estados FROM estado;";
+    require_once('../config.php');
 
-
-    $querye = mysqli_query($con, $sqle);
-
-
+    $querye = mostrar_estado($con);
 
 ?>

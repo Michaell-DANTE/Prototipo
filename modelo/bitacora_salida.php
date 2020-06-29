@@ -2,10 +2,8 @@
 
     require_once('../modelo/conexion.php');
 
-    $sqls = "SELECT nombre_usuario, documento, fecha, act_estado FROM bitacora_salida;";
+    require_once('../config.php');
 
-
-    $querys = mysqli_query($con, $sqls);
-
+    $querys = registros_salida($con);
 
 ?>

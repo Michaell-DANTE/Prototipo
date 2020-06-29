@@ -2,10 +2,8 @@
 
     require_once('../modelo/conexion.php');
 
-    $sqlr = "SELECT id, nombre_rol FROM roles;";
+    require_once("../config.php");
 
-
-    $queryr = mysqli_query($con, $sqlr);
-
+    $queryr = mostrar_rol($con);
 
 ?>

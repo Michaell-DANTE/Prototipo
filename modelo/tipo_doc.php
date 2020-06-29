@@ -2,12 +2,8 @@
 
     require_once('../modelo/conexion.php');
 
-    $sql = "SELECT id, tipo_documento FROM tipo_doc;";
+    require_once("../config.php");
 
-
-    $query = mysqli_query($con, $sql);
-
-
-
+    $query = mostrar_tipo_doc($con);
 
 ?>
