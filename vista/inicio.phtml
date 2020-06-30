@@ -8,27 +8,34 @@
     <title>Inicio</title>
 </head>
 <body>
-    
+
     <div class="contenedor">
     
         <img class="logo" src="../assets/img/persona.png" alt="logo">
         <h1>Ingreso</h1>
 
-        <form action="../controlador/redirecccion.php" method="post">
+        <form action="../controlador/entrar.php" method="post">
 
             <!-- Usuario -->
             <label for="usuario">Usuario</label>
-            <input type="text" placeholder="Usuario">
+            <input id="nombre" name="nombre_ing" type="text" placeholder="Usuario" require>
 
             <!-- Contraseña -->
             <label for="contraseña">Contraseña</label>
-            <input type="password" placeholder="Contraseña">
+            <input id="contraseña" name="contraseña_ing" type="password" placeholder="Contraseña" require>
 
-            <input class="BotonIngreso" type="submit" value="Ingresar">
+            <input name="enviar" class="BotonIngreso" type="submit" value="Ingresar">
 
         </form>
 
     </div>
+
+
+    <?php
+
+        require_once($contenido);
+
+    ?>
 
 </body>
 </html>
