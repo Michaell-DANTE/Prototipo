@@ -2,8 +2,24 @@
 
     require_once('../modelo/conexion.php');
 
-    require_once('../config.php');
+    //---------------------------------------Configuracion_De_Estado---------------------------------------------------
+    /**
+     * mostrar_estado
+     * Permite ver el los estados.
+     * @param  mixed $con
+     * @return $querye
+     */
 
-    $querye = mostrar_estado($con);
+    function mostrar_estado($con)
+    {
+
+        $sqle = "SELECT id, estados FROM estado;";
+
+        $querye = mysqli_query($con, $sqle);
+
+        return $querye;
+
+    }
+
 
 ?>

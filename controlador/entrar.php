@@ -9,8 +9,7 @@
         require_once("../controlador/ingreso.php");
         require("../modelo/ingreso.php");
 
-
-
+        $lectura = ingreso_admin($con, $nombre, $pass);
 
         if( $lectura != 0 )
         {
