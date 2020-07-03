@@ -1,7 +1,7 @@
 
 .contenedor2
 {
-
+    margin-top: 5%;
     width: 820px;
     background: black;
     color: black;
@@ -22,7 +22,8 @@
     .contenedor2
     {
     
-        width: 400px;
+        margin-top: 85%;
+        width: 390px;
         background: black;
         color: black;
         top: 50%;
@@ -51,5 +52,25 @@ th, td
     border: 1px white solid;
     padding: 15px;
     background: white;
+
+}
+
+.inicio
+{
+
+    margin-left: 85%;
+    margin-top: 2.5%;
+    text-decoration: none;
+    color: white;
+    width: 100px;
+    display: inline-block;
+    background: linear-gradient(50deg, rgb(17, 29, 206), rgb(133, 6, 158));
+    padding: 10px 19px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 5px;
 
 }

@@ -26,13 +26,11 @@
     
         $resultado = $con -> query("$sqlU");
     
-
         return $resultado;
 
         mysqli_close($con); 
     
     }
 
-    
 
 ?>

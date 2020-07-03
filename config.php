@@ -21,4 +21,22 @@
 
     }
 
+
+    function sesion_exitosa()
+    {
+
+        $var_sesion = isset($_SESSION['nombre_ing']);
+
+        if($var_sesion == '')
+        {
+
+            echo "Usted no esta autorizado";
+            die();
+
+        }
+
+        return $var_sesion;
+
+    }
+
 ?>

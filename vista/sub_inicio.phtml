@@ -1,4 +1,11 @@
 <!DOCTYPE html>
+<?php 
+
+    session_start(); 
+    require_once("../config.php");
+    $var_sesion = sesion_exitosa();
+
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,14 +15,25 @@
 </head>
 <body>
     
+    <h2>Bienvenido: <?php echo $_SESSION['nombre_ing'] ?></h2>
+    <a class="cerrar" href="../controlador/cerrar_sesion.php">Cerrar sesión</a>
     <div class="contenedor">
+
         <a class="ingresoL" href="../controlador/tipo_doc.php">Registros</a>
         <img class="ingreso" src="../assets/img/ingreso.png" alt="ingreso"><br>
 
-        <a class="registroL" href="pestañas/registro.phtml">Detalles</a>
+        <a class="registroL" href="../vista/pestañas/registro.phtml">Detalles</a>
         <img class="registro" src="../assets/img/registro.png" alt="registro">
+
+        
         
     </div>
+
+    <?php
+
+        require_once($contenido);
+
+    ?>
 
 </body>
 </html>

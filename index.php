@@ -1,5 +1,5 @@
 <?php
 
-    header("Location: vista/inicio.phtml");
+    header("Location: controlador/entrar.php");
 
 ?>
