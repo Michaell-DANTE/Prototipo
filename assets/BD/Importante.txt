@@ -1,0 +1,6 @@
+Para porder ingresar 
+
+el usuario es admin 
+y la contraseña es 1234
+
+Ojo solo cuando este dentro del navegador, para poder ingresar a la parte de administracion.
